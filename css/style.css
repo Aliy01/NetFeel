@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;500;600&family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+marquee {
+    color: crimson;
+    width: 100%;
+    height: 17.5px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer {
+    width: 100%;
+    height: 79px;
+    background: #777;
+    display: flex;
+    justify-content: center;
+}
+
+footer.active {
+    background: rgba(0, 0, 0, .03)
+}
+
+footer p {
+    margin-top: 30px;
+    color: #000;
+}
+
+span {
+    color: #4a95f7;
+    font-size: 64px;
+    /* box-shadow: 0px 0px 5px; */
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background-color: #4a95f7;
+    border-radius: 7.5px;
+    border: 1px solid #000;
+    box-shadow: 0px 0px 5px #555;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+#netfeel {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    height: 95px;
+}
+
+.header-field {
+    width: 100%;
+    height: 95px;
+    display: flex;
+    background: rgba(255, 255, 255, .5);
+}
+
+.header-field.active {
+    background: rgba(0, 0, 0, .03)
+}
+
+.header .logo {
+    width: 30%;
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 48px;
+}
+
+.header .logo a {
+    /* background: #4e4e4e; */
+    box-shadow: 0px 0px 7.5px #000;
+}
+
+.header-items {
+    width: 70%;
+    display: flex;
+}
+
+.search-title {
+    display: none;
+}
+
+.search-panel {
+    width: 70%;
+    text-align: center;
+    margin-top: 30px;
+    display: block;
+}
+
+.search-panel.active {
+    display: none;
+}
+
+#search {
+    width: 50%;
+    height: 40px;
+    font-size: 18px;
+    list-style: none;
+    outline-offset: -1px;
+    outline-color: #4a95f7;
+    border-top-left-radius: 30pc;
+    border-bottom-left-radius: 30pc;
+}
+
+.search-panel .btn-search {
+    position: relative;
+    top: -1px;
+    margin-left: -5px;
+    background-color: #ddd;
+    border-radius: none;
+    border-bottom: 2px solid rgb(153, 144, 144);
+    border-top-right-radius: 30pc;
+    border-bottom-right-radius: 30pc;
+    box-shadow: none;
+}
+
+#search:hover,
+.btn-search:hover {
+    border-bottom: 2px solid #000;
+    transition: all .5s ease;
+    cursor: default;
+}
+
+.sign-in {
+    width: 30%;
+    margin: 30px;
+}
+
+.sign-in.active {
+    width: 70%;
+    text-align: end;
+}
+
+.btn-sign-in {
+    width: 150px;
+    font-size: 18px;
+    border: 1px solid #000;
+    border-radius: 30pc;
+}
