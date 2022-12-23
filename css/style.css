@@ -5,10 +5,23 @@
     box-sizing: border-box;
 }
 
-marquee {
+body {
+    background: linear-gradient(210deg, rgb(190, 85, 104), rgb(112, 161, 226), rgb(119, 207, 119))
+}
+
+.checked-icon {
+    display: none;
+    justify-content: center;
+    position: relative;
     color: crimson;
+    font-size: 96px;
+}
+
+marquee {
+    color: rgb(129, 11, 34);
     width: 100%;
-    height: 17.5px;
+    height: 25px;
+    font-size: 24px;
 }
 
 a {
@@ -18,14 +31,15 @@ a {
 
 footer {
     width: 100%;
-    height: 79px;
-    background: #777;
+    height: 65px;
     display: flex;
     justify-content: center;
 }
 
 footer.active {
-    background: rgba(0, 0, 0, .03)
+    background: rgba(255, 255, 255, .2);
+    /* width: 80%;
+    float: right; */
 }
 
 footer p {
@@ -61,6 +75,7 @@ span {
 .header {
     width: 100%;
     height: 95px;
+    background: rgba(255, 255, 255, .2)
 }
 
 .header-field {
@@ -108,7 +123,7 @@ span {
 
 #search {
     width: 50%;
-    height: 40px;
+    height: 50px;
     font-size: 18px;
     list-style: none;
     outline-offset: -1px;
@@ -119,7 +134,8 @@ span {
 
 .search-panel .btn-search {
     position: relative;
-    top: -1px;
+    height: 50px;
+    top: -2px;
     margin-left: -5px;
     background-color: #ddd;
     border-radius: none;
@@ -151,4 +167,93 @@ span {
     font-size: 18px;
     border: 1px solid #000;
     border-radius: 30pc;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(210deg, rgb(190, 85, 104), rgb(112, 161, 226), rgb(119, 207, 119))
+}
+
+#components {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, .09)
+    /* border: 1px solid #000; */
+}
+
+#components .component-header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, .09)
+}
+
+.component-header i {
+    margin-top: 30px;
+    font-size: 28px;
+    margin: auto 10px;
+    color: #135bb9;
+}
+
+.component-header i:hover {
+    cursor: pointer;
+    color: #fff;
+    transform: scale(110%);
+    transition: all .1s ease;
+}
+
+.component-header .fa-chevron-right {
+    font-size: 18px;
+}
+
+.component-header .fa-chevron-right:hover {
+    cursor: auto;
+    color: #135bb9;
+}
+
+#components .component-body {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.component-body .row {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    /* padding: 10px 0; */
+}
+
+.component-body .row:hover {
+    background: rgba(0, 0, 0, .09);
+    color: #fff;
+    cursor: pointer;
+}
+
+.component-body .row i,
+.component-body .row h4 {
+    margin: 30px 40px;
+}
+
+.component-body .row h4 {
+    margin-left: -20px;
+}
+
+.component-footer {
+    height: 60px;
+    position: relative;
+}
+
+.contents {
+    width: 80%;
+    /* background: rgb(112, 161, 226); */
 }

@@ -2,13 +2,13 @@
 #view {
     width: 100%;
     height: 75vh;
-    display: flex;
+    display: none;
     justify-content: center;
 }
 
 .content {
     width: 70%;
-    height: 500px;
+    height: 450px;
     display: flex;
     margin-top: 20px;
     flex-direction: row;
@@ -19,7 +19,7 @@
 .content .row {
     width: 40%;
     height: 350px;
-    margin: 40px 30px;
+    margin: 60px 30px;
     padding: 10px;
     background: #fff;
     box-shadow: 0px 0px 15px #999;
@@ -70,6 +70,36 @@ p {
 
 .view button {
     width: 80%;
-    margin: 0px 30px;
+    margin: 0px 10%;
     border: none;
+}
+
+.view .checked-btns {
+    width: 100%;
+    display: none;
+    justify-content: center;
+}
+
+.choose-btn-danger {
+    background: none;
+    color: crimson;
+    box-shadow: 0 0 3px crimson;
+}
+
+.choose-btn-danger:hover,
+.choose-btn-success:hover {
+    transform: scale(105%);
+    background: crimson;
+    color: #fff
+}
+
+.choose-btn-success {
+    background: none;
+    box-shadow: 0 0 3px #4a95f7;
+}
+
+.choose-btn-success:hover {
+    transform: scale(105%);
+    background: #4a95f7;
+    color: #fff
 }
